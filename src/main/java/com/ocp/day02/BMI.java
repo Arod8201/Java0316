@@ -22,7 +22,7 @@ public class BMI {
 // 取得計算後的BMI資料
 
     double getBMIValue() {
-        double bmiValue = weight / Math.pow(height / 100, 2); //計算
+        double bmiValue = weight / Math.pow(height/100, 2); //計算
         return bmiValue; //回傳 bmiValue (要回傳與方法簽章一樣的型別也就是double值)
     }
 
@@ -37,7 +37,7 @@ public class BMI {
     void print() {
         double bmiValue = getBMIValue();
         String resultValue = getResultValue();
-        System.out.printf("姓名: %s 身高: %.1f 體重: %.1f BMI: %.2f\n 結果: %s\n",
+        System.out.printf("姓名: %s 身高: %.1f 體重: %.1f BMI: %.2f 結果: %s\n",
                 name, height, weight, bmiValue, resultValue);
     }
 }
