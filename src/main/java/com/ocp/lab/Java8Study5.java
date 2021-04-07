@@ -9,14 +9,17 @@ public class Java8Study5 {
     public static void main(String[] args) {
         // 請算出及格成績的總和
         // Java 7
-        String[] scores = {"80", "50", "70", "90", "40"};
-        int num = 0, sum = 0;
-        for (int i = 0; i < scores.length; i++) {
-            String.valueOf(scores[i]);
+         String[] scores = {"80", "50", "70", "90", "40"};
+        int[] score = new int[scores.length];
+        int sum = 0;
 
-            System.out.println(scores[i]);
-            System.out.println("=============");
+        for (int i = 0; i < scores.length; i++) {
+            score[i] = Integer.valueOf(scores[i]);
         }
+        for (int s : score) {
+            sum += s;
+        }
+        System.out.println(sum);
         // Java 8
         IntSummaryStatistics stat = Stream.of(scores)
                 .mapToInt(s -> Integer.parseInt(s)) // 得到IntStream // map -> 轉換
