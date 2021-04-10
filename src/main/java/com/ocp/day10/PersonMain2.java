@@ -27,6 +27,6 @@ public class PersonMain2 {
         // 印出人名
         Consumer<Person> prinName = p -> System.out.println(p.getName());
 //印出正常bmi的人名
-        Stream.of(persons).filter(nomalBmi).forEach(p -> System.out.println(p.getName()));
+         Stream.of(persons).filter(normalBmi).forEach(printName);
     }
 }
