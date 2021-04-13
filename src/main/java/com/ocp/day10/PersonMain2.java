@@ -25,8 +25,8 @@ public class PersonMain2 {
         // getBMI.apply(p) 取得 getBMI 的計算結果
         Predicate<Person> nomalBmi = p -> getBMI.apply(p) > 18 && getBMI.apply(p) <= 23;
         // 印出人名
-        Consumer<Person> prinName = p -> System.out.println(p.getName());
+        Consumer<Person> printName = p -> System.out.println(p.getName());
 //印出正常bmi的人名
-         Stream.of(persons).filter(normalBmi).forEach(printName);
+        Stream.of(persons).filter(nomalBmi).forEach(printName);
     }
 }
