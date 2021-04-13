@@ -6,7 +6,7 @@ import sun.text.normalizer.UCharacter;
 
 public class PersonMain {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Person[] persons = {
             new Person("John", 17, 170, 60.5),
             new Person("Mary", 18, 160, 60.5),
