@@ -65,7 +65,7 @@ public class ExtendsDemo {
         // Java 7
         int sum5 = 0;
         for (Employee e : employees) {
-            System.out.println(e.getClass().getSimpleName());
+            //System.out.println(e.getClass().getSimpleName());
             if (e.getClass().getSimpleName().equals("Manager")) {
                 sum5 += e.getSalary();
             }
@@ -77,7 +77,8 @@ public class ExtendsDemo {
 
         // Java 8
         int sum6 = Stream.of(employees)
-                .filter(e -> e.getClass().getSimpleName().equals("Manager"))
+                .filter(e -> e.getClass().getSimpleName().equals("Manager")
+                || e.getClass().getSimpleName().equals("Director")))
                 .mapToInt(e -> e.getSalary())
                 .sum();
         System.out.printf("Manager 總薪資: %,d\n", sum6);
@@ -91,8 +92,10 @@ public class ExtendsDemo {
         int sum7 = Stream.of(employees)
                 .filter(e -> e instanceof Manager)
                 //.peek(e->System.out.println(e))
-                .mapToInt(e -> e.getSalary())
-                .peek(e -> System.out.println(e))
+                //.mapToInt(e -> e.getSalary())
+                .mapToInt(Employee::getSalary)
+                //.peek(e -> System.out.println(e))
+                .peek(System.out::println)
                 .sum();
         System.out.printf("Manager 總薪資: %,d\n", sum7);
     }
