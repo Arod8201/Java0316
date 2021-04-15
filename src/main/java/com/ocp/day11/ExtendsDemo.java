@@ -78,7 +78,7 @@ public class ExtendsDemo {
         // Java 8
         int sum6 = Stream.of(employees)
                 .filter(e -> e.getClass().getSimpleName().equals("Manager")
-                || e.getClass().getSimpleName().equals("Director")))
+                || e.getClass().getSimpleName().equals("Director"))
                 .mapToInt(e -> e.getSalary())
                 .sum();
         System.out.printf("Manager 總薪資: %,d\n", sum6);
