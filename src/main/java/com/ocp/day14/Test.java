@@ -1,5 +1,6 @@
 package com.ocp.day14;
 
+import java.util.IntSummaryStatistics;
 import java.util.stream.Stream;
 
 public class Test {
@@ -18,16 +19,21 @@ public class Test {
                 .forEach(e -> e.job());
 
         //請求出總薪資與平均薪資
-        int sum = Stream.of(employees)
+//        int sum = Stream.of(employees)
+//                .mapToInt(Employee::getSalary)
+//                .sum();
+//        System.out.printf("總薪資: %,d\n", sum);
+//
+//        double avg = Stream.of(employees)
+//                .mapToDouble(Employee::getSalary)
+//                .average()
+//                .getAsDouble();
+//        System.out.printf("平均薪資: %,.1f\n", avg);
+        IntSummaryStatistics stat = Stream.of(employees)
                 .mapToInt(Employee::getSalary)
-                .sum();
-        System.out.printf("總薪資: %,d\n", sum);
-
-        double avg = Stream.of(employees)
-                .mapToDouble(Employee::getSalary)
-                .average()
-                .getAsDouble();
-        System.out.printf("平均薪資: %,.1f\n", avg);
+                .summaryStatistics();
+        System.out.println(stat.getSum());
+        System.out.println(stat.getAverage());
 
     }
 }
