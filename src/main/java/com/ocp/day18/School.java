@@ -50,6 +50,6 @@ public class School {
         System.out.println("不及格平均: " + avg);
         System.out.println("=========================");
         
-       // 老師不及格的學生比例佔百分之幾 ?
+       // 老師不及格的學生比例佔百分之幾 ? 
     }
 }
