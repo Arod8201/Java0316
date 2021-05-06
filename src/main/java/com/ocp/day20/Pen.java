@@ -1,4 +1,4 @@
-package com.ocp.day19.day20;
+package com.ocp.day20;
 
 import java.util.Objects;
 
