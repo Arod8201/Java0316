@@ -7,15 +7,21 @@ import java.util.TreeSet;
 public class SetDemo6 {
 
     public static void main(String[] args) {
-       Set<Integer> data = new HashSet<>();
+         // 利用 HastSet 加入資料
+        Set<Integer> data = new HashSet<>();
         data.add(100);
         data.add(80);
         data.add(90);
-        
+        System.out.println(data);
+        System.out.println(data.getClass().getTypeName());
+        System.out.println("======================");
+
         // 利用 TreeSet 查詢資料
         // 將  HashSet 轉 TreeSet
-        data  = new TreeSet<>(data);
+        data = new TreeSet<>();
+        data.contains(100);
         System.out.println(data);
+        System.out.println(data.getClass().getTypeName());
         
     }
 }
