@@ -5,9 +5,9 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetDemo4 {
-    
+
     public static void main(String[] args) {
-               // 國英數的分數是介於 0~100
+        // 國英數的分數是介於 0~100
         Set<Integer> scores = new LinkedHashSet<>();
         scores.add(100);
         scores.add(200);

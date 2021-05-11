@@ -1,15 +1,13 @@
-
-
 package com.ocp.day23;
 
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
-
 public class SetDemo5 {
+
     public static void main(String[] args) {
-         // 排序性(小 -> 大)
+        // 排序性(小 -> 大)
         Set<Integer> nums = new TreeSet<>();
 
         // 1~9 任意5個

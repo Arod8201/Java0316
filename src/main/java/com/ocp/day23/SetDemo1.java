@@ -22,10 +22,10 @@ public class SetDemo1 {
             Object next = iter.next();
             //System.out.println(next);
 
-            if (next == null ||next instanceof Integer) {
+            if (next == null || next instanceof Integer) {
                 iter.remove();
             }
-       
+
         }
         System.out.println(subjects);
     }

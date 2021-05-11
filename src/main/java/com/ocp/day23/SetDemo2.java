@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class SetDemo2 {
 
     public static void main(String[] args) {
-                // 國英數的分數是介於 0~100
+        // 國英數的分數是介於 0~100
         Set scores = new LinkedHashSet();
         scores.add(100);
         scores.add(2000);

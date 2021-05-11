@@ -2,7 +2,6 @@ package com.ocp.day10;
 
 import java.util.function.Predicate;
 import java.util.stream.Stream;
-import sun.text.normalizer.UCharacter;
 
 public class PersonMain {
 
