@@ -20,7 +20,7 @@ public class Main {
 
     public static void menu() {
         sc.menu();
-        System.out.println("System.out.printf(\"id: %d %s\\n\", i, order.get(i));請輸入需要項目: ");
+         System.out.print("請輸入: ");
         Scanner scanner = new Scanner(System.in);
         int itemId = scanner.nextInt();
         switch (itemId) {
