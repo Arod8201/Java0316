@@ -1,4 +1,4 @@
-package com.ocp.lab;
+package com.lab;
 
 import java.util.IntSummaryStatistics;
 import java.util.stream.IntStream;

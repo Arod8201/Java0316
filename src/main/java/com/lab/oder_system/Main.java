@@ -1,4 +1,4 @@
-package com.ocp.lab.oder_system;
+package com.lab.oder_system;
 
 import java.util.ArrayList;
 import java.util.List;

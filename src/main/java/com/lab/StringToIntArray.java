@@ -1,4 +1,4 @@
-package com.ocp.lab;
+package com.lab;
 
 // 字串轉 Int 陣列
 public class StringToIntArray {
