@@ -29,8 +29,4 @@ public class Util {
         }
         return false;
     }
-
-    public static String getJson() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
