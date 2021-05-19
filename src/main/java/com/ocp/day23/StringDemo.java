@@ -12,9 +12,11 @@ public class StringDemo {
         stack.push("a");
         System.out.println(stack);
 
-        while (!(stack.isEmpty())) {            
-            
+        StringBuilder str = new StringBuilder();
+        while (!stack.isEmpty()) {
+            str.append(stack.pop());
         }
+        System.out.println(str);
     }
 
 }
