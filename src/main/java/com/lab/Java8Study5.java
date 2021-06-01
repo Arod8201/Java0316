@@ -2,14 +2,13 @@ package com.lab;
 
 import java.util.IntSummaryStatistics;
 import java.util.stream.Stream;
-import sun.awt.image.IntegerComponentRaster;
 
 public class Java8Study5 {
 
     public static void main(String[] args) {
         // 請算出及格成績的總和
         // Java 7
-         String[] scores = {"80", "50", "70", "90", "40"};
+        String[] scores = {"80", "50", "70", "90", "40"};
         int[] score = new int[scores.length];
         int sum = 0;
 
