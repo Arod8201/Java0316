@@ -20,7 +20,5 @@ public class ThreadDemo4 {
         t2.start();
 
         System.out.printf("%s 工作完成\n", Thread.currentThread().getName());
-
     }
-
 }
