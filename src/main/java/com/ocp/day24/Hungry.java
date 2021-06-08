@@ -9,8 +9,6 @@ public class Hungry {
         Set<Food> catalog = dc.getCatalog();
         System.out.println(catalog);
         System.out.println(catalog.size());
-        
-        
-    }
 
+    }
 }
