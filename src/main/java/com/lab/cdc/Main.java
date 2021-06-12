@@ -16,7 +16,5 @@ public class Main {
                     System.out.println(c.getDescription().trim());
                     System.out.println(c.getDistance());
                 });
-
     }
-
 }
