@@ -10,7 +10,7 @@ ForkJoin 必考 (很重要)
 class SumTask extends RecursiveTask<Long> {
 
     private static final int THRESHOLD = 3; // 門檻值
-    private long[] numbers;
+    private long[] numbers; // 數值
     private int from;
     private int to;
 
